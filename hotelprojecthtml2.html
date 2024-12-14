@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="bookingform">
+        <div class="divtype1">
+          <label>Your Name</label>
+          <input type="text" placeholder="Ex- Vikas Kumar" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="divtype1">
+          <label for="email">Your E-mail</label>
+          <input type="email" placeholder="Ex- vikaskumar11@gmail.com" required>
+        </div>
+        <div class="divtype1">
+          <label for="phone">Your Mobile</label>
+          <input type="tel" placeholder="Ex- +91 9584802493" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <div class="divtype2">
+          <label for="adult">Adults</label>
+          <input type="number" placeholder="2" min="1" required>
+        </div>
+        <div class="divtype2">
+          <label for="child">Children</label>
+          <input type="number" placeholder="2" min="0" required>
+        </div>
+        <div class="divtype2">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" required>
+        </div>
+        <div class="divtype2">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" required>
+        </div>
+        <div class="divtype1">
+            <label for="phone">How many rooms to book</label>
+            <input type="tel" placeholder="Ex- 1/2/5/10" pattern=(\d{3}) required>
+          </div>
+        <div class="divtype1">
+          <label for="message">Anything Else?</label>
+          <textarea placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <div class="buttonicon">
+        <button type="submit">Book The Rooms</button>
+        <i class="fa-brands fa-google-pay" style="color: #0000ff;" id="iconpay"></i>
+        </div>
+    </form>
+    
+</body>
+</html>
